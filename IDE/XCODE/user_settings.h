@@ -138,6 +138,13 @@ extern "C" {
 #undef  HAVE___UINT128_T
 #define HAVE___UINT128_T
     
+    /* single precision math */
+#if 1
+#define WOLFSSL_HAVE_SP_RSA
+#define WOLFSSL_HAVE_SP_DH
+#define WOLFSSL_HAVE_SP_ECC
+#endif
+    
     /* ARMv8 - iPhone 8/8Plus and iPhone X */
 #ifdef __ARM_FEATURE_CRYPTO
 #define WOLFSSL_ARMASM
